@@ -1,0 +1,110 @@
+# depslib dependency file v1.0
+1686667616 source:c:\users\usuario\desktop\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686667501 c:\users\usuario\desktop\proyectospacex-utn\astronauta.h
+
+1686667265 source:c:\users\usuario\desktop\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686880128 source:c:\users\gc\downloads\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686878983 c:\users\gc\downloads\proyectospacex-utn\astronauta.h
+
+1686880236 source:c:\users\gc\downloads\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686771665 source:c:\users\gc\desktop\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686770720 c:\users\gc\desktop\proyectospacex-utn\astronauta.h
+
+1686771658 source:c:\users\gc\desktop\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686794590 source:c:\users\fabri\desktop\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686791611 c:\users\fabri\desktop\proyectospacex-utn\astronauta.h
+
+1686783313 source:c:\users\fabri\desktop\proyectospacex-utn\nave.c
+
+1686794395 source:c:\users\fabri\desktop\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686783313 source:c:\users\gc\downloads\proyectospacex-utn\nave.c
+
+1686924304 source:c:\users\usuario\desktop\spacex-project-utn-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686930276 c:\users\usuario\desktop\spacex-project-utn-main\astronauta.h
+
+1686923494 source:c:\users\usuario\desktop\spacex-project-utn-main\nave.c
+
+1686924016 source:c:\users\usuario\desktop\spacex-project-utn-main\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686924304 source:c:\users\gc\desktop\spacex-project-utn-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686941698 c:\users\gc\desktop\spacex-project-utn-main\astronauta.h
+
+1686923494 source:c:\users\gc\desktop\spacex-project-utn-main\nave.c
+
+1686945670 source:c:\users\fabri\desktop\spacex-project-utn-main\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686948513 c:\users\fabri\desktop\spacex-project-utn-main\astronauta.h
+
+1686943696 source:c:\users\fabri\desktop\spacex-project-utn-main\nave.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"nave.h"
+
+1686948477 source:c:\users\fabri\desktop\spacex-project-utn-main\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686943696 c:\users\fabri\desktop\spacex-project-utn-main\nave.h
+
