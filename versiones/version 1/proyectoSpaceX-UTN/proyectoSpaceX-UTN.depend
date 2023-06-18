@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1686667616 source:c:\users\usuario\desktop\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686667501 c:\users\usuario\desktop\proyectospacex-utn\astronauta.h
+
+1686667265 source:c:\users\usuario\desktop\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686703804 source:c:\users\gc\downloads\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686703771 c:\users\gc\downloads\proyectospacex-utn\astronauta.h
+
+1686703923 source:c:\users\gc\downloads\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	<ctype.h>
+
+1686771665 source:c:\users\gc\desktop\proyectospacex-utn\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
+1686770720 c:\users\gc\desktop\proyectospacex-utn\astronauta.h
+
+1686771658 source:c:\users\gc\desktop\proyectospacex-utn\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+
