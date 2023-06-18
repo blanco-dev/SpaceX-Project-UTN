@@ -6,7 +6,7 @@
 #include "menu.h"
 #define DIM_MAX_ARCHI 15
 #define DIM_MAX_STR 20
-
+**//asd
 int main()
 {
     char archivoAstronautas[DIM_MAX_ARCHI] = "astronautas";
