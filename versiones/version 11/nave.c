@@ -8,16 +8,13 @@
 
 // validar
 
-void validarTipoNave(char archivoNaves[])
-{
+void validarTipoNave(char archivoNaves[]) {
 
     int flag = 0, dato=0;
     tiposDeNave();
     dato=preguntarDato();
-    do
-    {
-        switch(dato)
-        {
+    do {
+        switch(dato) {
         case 1:
             strcpy(archivoNaves,"StarShip");
             flag = 1;
@@ -35,15 +32,13 @@ void validarTipoNave(char archivoNaves[])
             break;
         }
 
-    }
-    while(flag == 0);
+    } while(flag == 0);
 
 }
 
 // cargar nave
 
-stNaves cargarUnaNave(char archivoNaves[])
-{
+stNaves cargarUnaNave(char archivoNaves[]) {
 
     int dato = 0;
     stNaves aux;
@@ -61,15 +56,13 @@ stNaves cargarUnaNave(char archivoNaves[])
     return aux;
 }
 
-int encontrarUltimaIDNave(char archivoNaves[])
-{
+int encontrarUltimaIDNave(char archivoNaves[]) {
 
     int ultimaID;
     stNaves naveAux;
     FILE* aux;
     aux = fopen(archivoNaves,"rb");
-    if(aux != NULL)
-    {
+    if(aux != NULL) {
 
         fseek(aux,sizeof(stNaves)*-1,SEEK_END);
         fread(&naveAux,sizeof(stNaves),1,aux);
@@ -79,8 +72,7 @@ int encontrarUltimaIDNave(char archivoNaves[])
     return ultimaID;
 }
 
-void tiposDeNave()
-{
+void tiposDeNave() {
     puts("----------------SELECCIONE UN TIPO DE NAVE------------------\n");
     puts("1-StarShip (7 astronautas obligatorio)");
     puts("2-Falcon 9 (5 astronautas obligatorio)");
@@ -89,24 +81,20 @@ void tiposDeNave()
 
 // cargar arreglo
 
-int cargarArregloNave(stNaves arrNave[], char archivoNaves[])
-{
+int cargarArregloNave(stNaves arrNave[], char archivoNaves[]) {
     char op='s';
     int contStarship=1, contFalcon9=1, contFalconHeavy=1;
     stNaves aux;
     int i=0, comprobar=0;
 
-    while((op == 's' || op=='S') && i < 15)
-    {
+    while((op == 's' || op=='S') && i < 15) {
         aux=cargarUnaNave(archivoNaves);
 
 
-        if(strcmp(aux.tipoDeNave,"StarShip") == 0)
-        {
+        if(strcmp(aux.tipoDeNave,"StarShip") == 0) {
             comprobar=validarCantNave(contStarship);
             {
-                if (comprobar ==0)
-                {
+                if (comprobar ==0) {
                     arrNave[i]=aux;
                     contStarship++;
                 }
@@ -114,24 +102,20 @@ int cargarArregloNave(stNaves arrNave[], char archivoNaves[])
             }
 
         }
-        if(strcmp(aux.tipoDeNave,"Falcon 9") == 0)
-        {
+        if(strcmp(aux.tipoDeNave,"Falcon 9") == 0) {
             comprobar=validarCantNave(contFalcon9);
             {
-                if (comprobar ==0)
-                {
+                if (comprobar ==0) {
                     arrNave[i]=aux;
                     contFalcon9++;
                 }
 
             }
         }
-        if (strcmp(aux.tipoDeNave,"Falcon Heavy") == 0)
-        {
+        if (strcmp(aux.tipoDeNave,"Falcon Heavy") == 0) {
             comprobar=validarCantNave(contFalconHeavy);
             {
-                if (comprobar ==0)
-                {
+                if (comprobar ==0) {
                     arrNave[i]=aux;
                     contFalconHeavy++;
                 }
@@ -143,29 +127,26 @@ int cargarArregloNave(stNaves arrNave[], char archivoNaves[])
 
         printf("Desea seguir cargando naves? s/n:");
         fflush(stdin);
-        op= getch(op);
+        op= scanf("%c", &op);
         limpiarPantalla();
     }
-    if(i == 14)
-    {
+    if(i == 14) {
         puts("Ha alcanzado el limite de naves disponible");
     }
 
     return i;
 }
 
-int validarCantNave(int cont)
-{
+int validarCantNave(int cont) {
     int maximo=5;
     // esta funcion sirve para los 3 tipos de nave
 
-    if(cont > maximo)
-    {
+    if(cont > maximo) {
         printf("La cantidad de naves esta llena \n");
         return 1; // Aqui ya excedio el maximo de naves
     }
-        printf("Tiene esta cantidad de naves fabricadas: %i \n",cont);
-        return 0; // El usuario va a poder seguir cargando ya que no excede el maximo de naves
+    printf("Tiene esta cantidad de naves fabricadas: %i \n",cont);
+    return 0; // El usuario va a poder seguir cargando ya que no excede el maximo de naves
 
 }
 
@@ -173,30 +154,22 @@ int validarCantNave(int cont)
 
 // carga del archivo
 
-void arregloNavesToArchivoNaves(char archivoNaves[],stNaves arrNaves[], int validos)
-{
-    FILE * buffer=fopen(archivoNaves,"ab");
-    stNaves aux;
+void arregloNavesToArchivoNaves(char archivoNaves[],stNaves arrNaves[], int validos) {
+    FILE * buffer = fopen(archivoNaves,"ab");
 
-    if (buffer != NULL)
-    {
-        for (int i=0; i < validos; i++)
-        {
-            fwrite(&aux,sizeof(stNaves),1,buffer);
+    if (buffer != NULL) {
+        for (int i=0; i < validos; i++) {
+            fwrite(&arrNaves[i],sizeof(stNaves),1,buffer);
         }
-
         fclose(buffer);
-    }
-    else
-    {
+    } else {
         printf("Error con archivo");
     }
 }
 
 // mostrar naves
 
-void mostrarUnaNave(stNaves aux)
-{
+void mostrarUnaNave(stNaves aux) {
     puts("---------------------NAVE---------------------");
     printf("ID...............................:|%i|  \n",aux.idNave);
     printf("Tipo de nave.....................:|%s|  \n",aux.tipoDeNave);
@@ -206,43 +179,32 @@ void mostrarUnaNave(stNaves aux)
     puts("----------------------------------------------");
 
 }
-void mostrarTodasLasNaves(char archivoNaves)
-{
+void mostrarTodasLasNaves(char archivoNaves) {
     stNaves aux;
     FILE * buffer=fopen(archivoNaves,"rb");
 
-    if(buffer != NULL)
-    {
-        while(fread(&aux,sizeof(stNaves),1,buffer) > 0)
-        {
+    if(buffer != NULL) {
+        while(fread(&aux,sizeof(stNaves),1,buffer) > 0) {
             mostrarUnaNave(aux);
         }
         fclose(buffer);
-    }
-    else
-    {
+    } else {
         printf("Error con el archivo\n");
     }
 
 }
-void mostrarNavesXEstado(char archivoNaves, int estado)
-{
+void mostrarNavesXEstado(char archivoNaves, int estado) {
     stNaves aux;
     FILE * buffer=fopen(archivoNaves,"rb");
-    if(buffer != NULL)
-    {
-        while(fread(&aux,sizeof(stNaves),1,buffer) > 0)
-        {
-            if(aux.estado == estado)
-            {
+    if(buffer != NULL) {
+        while(fread(&aux,sizeof(stNaves),1,buffer) > 0) {
+            if(aux.estado == estado) {
                 mostrarUnaNave(aux);
             }
 
         }
         fclose(buffer);
-    }
-    else
-    {
+    } else {
         printf("Error con el archivo\n");
     }
 }
@@ -250,26 +212,21 @@ void mostrarNavesXEstado(char archivoNaves, int estado)
 //modificar nave
 
 
-void cargarNaveModificada(char archivoNaves)
-{
+void cargarNaveModificada(char archivoNaves) {
     FILE * buffer=fopen(archivoNaves,"rb");
 
-    if(buffer != NULL)
-    {
+    if(buffer != NULL) {
 
 
 
         fclose(buffer);
-    }
-    else
-    {
+    } else {
         printf("Error con el archivo \n");
     }
 
 }
 
-void modificarUnaNave(stNaves * aux)
-{
+void modificarUnaNave(stNaves * aux) {
 
 
 

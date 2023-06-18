@@ -148,3 +148,44 @@
 
 1687064287 c:\users\fabri\desktop\spacex-project-utn-main(fabri)\nave.h
 
+<<<<<<< HEAD
+=======
+1687060000 source:c:\users\gc\desktop\spacex-project-utn-main(fabri)\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"nave.h"
+	"menu.h"
+
+1687060000 c:\users\gc\desktop\spacex-project-utn-main(fabri)\astronauta.h
+
+1687064287 c:\users\gc\desktop\spacex-project-utn-main(fabri)\nave.h
+
+1687060000 c:\users\gc\desktop\spacex-project-utn-main(fabri)\menu.h
+
+1687066205 source:c:\users\gc\desktop\spacex-project-utn-main(fabri)\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"naves.h"
+	"menu.h"
+
+1687050946 c:\users\gc\desktop\spacex-project-utn-main(fabri)\naves.h
+
+1687065893 source:c:\users\gc\desktop\spacex-project-utn-main(fabri)\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"naves.h"
+
+1687065547 source:c:\users\gc\desktop\spacex-project-utn-main(fabri)\nave.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"naves.h"
+
+>>>>>>> 9d369ad48dc6f93549f47499f72b754fa58ebeee

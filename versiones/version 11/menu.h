@@ -15,6 +15,10 @@ void opcionMostrarAstronautas(char archivoAstro[]);
 void dibujoAstronauta();
 
 //menu nave
+void menuNaves(char archivoNaves[]);
+void dibujoNaves();
+void opcionMostrarNaves(char archivoNaves[]);
+
 
 
 #endif // MENU_H_INCLUDED

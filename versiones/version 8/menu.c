@@ -139,7 +139,11 @@ void menuAstronauta(char archivoAstronauta[])
 
     printf("Quiere volver al menu de astronauta? s/n: ");
     fflush(stdin);
+<<<<<<< HEAD
     scanf("%c",&op);
+=======
+    op = getch(op);
+>>>>>>> 9d369ad48dc6f93549f47499f72b754fa58ebeee
     limpiarPantalla();
 
     }while(op=='s');
@@ -186,7 +190,11 @@ void opcionMostrarAstronautas(char archivoAstro[])
 
     printf("Quiere seguir mostrando astronautas? s/n: ");
     fflush(stdin);
+<<<<<<< HEAD
     scanf("%c",&op);
+=======
+    op = getch(op);
+>>>>>>> 9d369ad48dc6f93549f47499f72b754fa58ebeee
     limpiarPantalla();
 
     }while(op=='s');

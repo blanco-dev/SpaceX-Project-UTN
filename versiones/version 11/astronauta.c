@@ -794,6 +794,8 @@ void menuConsultarPorAstronauta(stAstronauta arregloAstro[],int validos)
     int op = 0;
     char continuar= 's';
     int dato = 0;
+    int busqueda = 0;
+
     char datoString[DIM_MAX_STR];
 
     do
@@ -807,8 +809,8 @@ void menuConsultarPorAstronauta(stAstronauta arregloAstro[],int validos)
         {
         case 1:
             puts("------------------------------INGRESE EL ID A BUSCAR----------------------------\n");
-            dato = preguntarDato();
-            dato= buscarIDastro(arregloAstro,dato,validos);
+            busqueda = preguntarDato();
+            dato= buscarIDastro(arregloAstro,busqueda,validos);
             if (dato != -1)
             {
                 printf("El astronauta con el ID: %i \n\n", arregloAstro[dato].id);
@@ -816,7 +818,7 @@ void menuConsultarPorAstronauta(stAstronauta arregloAstro[],int validos)
             }
             else
             {
-                printf("No se encontro ningun astronauta con el ID: %i", dato);
+                printf("No se encontro ningun astronauta con el ID: %i", busqueda);
             }
 
             break;

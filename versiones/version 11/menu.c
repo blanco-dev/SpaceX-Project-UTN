@@ -8,19 +8,17 @@
 #define DIM_MAX_STR 20
 
 // VOID inicioPredeterminado(recibe todos los archivos)
-    //creamos 3 (para poder utilizar al menos la nave mas mala)
-    //creamos 1 nave de cada tipo asi el usuario puede seguir creando naves hasta un maximo de 6
-    //misiones reseatado a 0
+//creamos 3 (para poder utilizar al menos la nave mas mala)
+//creamos 1 nave de cada tipo asi el usuario puede seguir creando naves hasta un maximo de 6
+//misiones reseatado a 0
 
-void menuPrincipal(char archivoAstronautas[],char archivoNaves[],char archivoMisiones[])
-{
+void menuPrincipal(char archivoAstronautas[],char archivoNaves[],char archivoMisiones[]) {
     int opsw;
 
     pantallaDeCarga();
     limpiarPantalla();
 
-    do
-    {
+    do {
         logoUTN();
 
         printf("Bienvenido, que desea elegir? \n");
@@ -36,12 +34,12 @@ void menuPrincipal(char archivoAstronautas[],char archivoNaves[],char archivoMis
 
         limpiarPantalla();
 
-        switch(opsw)
-        {
+        switch(opsw) {
         case 1:
             menuAstronauta(archivoAstronautas);
             break;
         case 2:
+            menuNaves(archivoNaves);
             break;
         case 3:
             break;
@@ -49,13 +47,11 @@ void menuPrincipal(char archivoAstronautas[],char archivoNaves[],char archivoMis
             break;
         }
 
-    }
-    while(validarOpcionMenu(opsw));
+    } while(validarOpcionMenu(opsw));
 
 }
 
-void logoUTN()
-{
+void logoUTN() {
     puts(" .----------------.  .----------------.  .------------------.      ");
     puts("| .--------------. || .--------------. || .---------------. |      ");
     puts("| | _____  _____ | || |  _________   | || |  ____  _____  | |      ");
@@ -71,16 +67,12 @@ void logoUTN()
 }
 
 
-int validarOpcionMenu(int dato)
-{
+int validarOpcionMenu(int dato) {
     int maximo=3;
-    if (dato < 0 || dato > maximo)
-    {
+    if (dato < 0 || dato > maximo) {
         printf("Ingrese una opcion valida por favor \n \n");
         return 1;
-    }
-    else
-    {
+    } else {
         return 0;
     }
 
@@ -89,8 +81,7 @@ int validarOpcionMenu(int dato)
 
 
 
-void pantallaDeCarga()
-{
+void pantallaDeCarga() {
     puts("-------------------------------------------------------------------------------------------------------------------------------------");
     puts("|     SSSSSSSSSSSSSSS                                                                                      XXXXXXX       XXXXXXX     |");
     puts("|   SS:::::::::::::::S                                                                                     X:::::X       X:::::X     |");
@@ -119,51 +110,48 @@ void pantallaDeCarga()
     system("pause");
 }
 
-void menuAstronauta(char archivoAstronauta[])
-{
+void menuAstronauta(char archivoAstronauta[]) {
     char op;
     int opsw;
 
-    do
-    {
+    do {
 
-    dibujoAstronauta();
+        dibujoAstronauta();
 
-    printf("Que desea hacer?: ");
-    scanf("%i",&opsw);
+        printf("Que desea hacer?: ");
+        scanf("%i",&opsw);
 
-    limpiarPantalla();
+        limpiarPantalla();
 
-    switch(opsw)
-    {
-    case 1:
-        cargarUnAstroToArchivo(archivoAstronauta);
-        break;
-    case 2:
-        cargarAstroModificado(archivoAstronauta);
-        break;
-    case 3:
-        opcionMostrarAstronautas(archivoAstronauta);
-        break;
-    case 4:
-        break;
-    case 5:
-        break;
-    default:
-        printf("Por favor ingrese un dato valido \n");
-        break;
-    }
+        switch(opsw) {
+        case 1:
+            cargarUnAstroToArchivo(archivoAstronauta);
+            break;
+        case 2:
+            cargarAstroModificado(archivoAstronauta);
+            break;
+        case 3:
+            opcionMostrarAstronautas(archivoAstronauta);
+            break;
+        case 4:
+            elegirLaConsulta(archivoAstronauta);
+            break;
+        case 5:
+            break;
+        default:
+            printf("Por favor ingrese un dato valido \n");
+            break;
+        }
 
-    printf("Quiere volver al menu de astronauta? s/n: ");
-    fflush(stdin);
-    op = getch(op);
-    limpiarPantalla();
+        printf("Quiere volver al menu de astronauta? s/n: ");
+        fflush(stdin);
+        op = getch(op);
+        limpiarPantalla();
 
-    }while(op=='s');
+    } while(op=='s');
 }
 
-void opcionMostrarAstronautas(char archivoAstro[])
-{
+void opcionMostrarAstronautas(char archivoAstro[]) {
     int opsw,estado;
     char op;
     int validosAstro= contarRegistros(archivoAstro);
@@ -173,45 +161,41 @@ void opcionMostrarAstronautas(char archivoAstro[])
 
     archivoToArregloAstro(arregloAstro,archivoAstro);
 
-    do
-    {
+    do {
 
-    puts("--------------------------------------------------------");
-    puts("1. Mostrar todos los astronautas en la base de datos");
-    puts("2. Mostrar los astronautas disponibles (Estado= 1)");
-    puts("3. Mostrar los astronautas dados de baja (Estado= 0)");
-    puts("--------------------------------------------------------");
-    opsw= preguntarDato();
-    limpiarPantalla();
-    switch(opsw)
-    {
-    case 1:
-        mostrarAstronautas(archivoAstro);
-        break;
-    case 2:
-        estado = 1;
-        buscarAstronautasPorEstado(arregloAstro,estado,validosAstro);
-        break;
-    case 3:
-        estado = 0;
-        buscarAstronautasPorEstado(arregloAstro,estado,validosAstro);
-        break;
-    default:
-        printf("Por favor ingrese una opcion valida \n");
-        break;
-    }
+        puts("--------------------------------------------------------");
+        puts("1. Mostrar todos los astronautas en la base de datos");
+        puts("2. Mostrar los astronautas disponibles (Estado= 1)");
+        puts("3. Mostrar los astronautas dados de baja (Estado= 0)");
+        puts("--------------------------------------------------------");
+        opsw= preguntarDato();
+        limpiarPantalla();
+        switch(opsw) {
+        case 1:
+            mostrarAstronautas(archivoAstro);
+            break;
+        case 2:
+            estado = 1;
+            buscarAstronautasPorEstado(arregloAstro,estado,validosAstro);
+            break;
+        case 3:
+            estado = 0;
+            buscarAstronautasPorEstado(arregloAstro,estado,validosAstro);
+            break;
+        default:
+            printf("Por favor ingrese una opcion valida \n");
+            break;
+        }
 
-    printf("Quiere seguir mostrando astronautas? s/n: ");
-    fflush(stdin);
-    op = getch(op);
-    limpiarPantalla();
+        printf("Quiere seguir mostrando astronautas? s/n: ");
+        fflush(stdin);
+        op = getch(op);
+        limpiarPantalla();
 
-    }while(op=='s');
+    } while(op=='s');
 }
 
-
-void dibujoAstronauta()
-{
+void dibujoAstronauta() {
     puts("----------------------------------------");
     puts("        _..._                          ");
     puts("      .'     '.      _                 ");
@@ -240,7 +224,120 @@ void dibujoAstronauta()
 
 }
 
+void menuNaves(char archivoNaves[]){
+    char op = 's';
+    int opsw = 0;
+    int validos = 0;
+    stNaves arrNave[DIM_MAX_STR];
+    do {
 
+        dibujoNaves();
+        printf("Que desea realizar? ");
+        fflush(stdin);
+        scanf("%i", &opsw);
+        limpiarPantalla();
 
+        switch(opsw) {
+        case 1:
+            validos = cargarArregloNave(arrNave, archivoNaves);
+            printf("Validos: %i",validos);
+            arregloNavesToArchivoNaves(archivoNaves, arrNave, validos);
+            break;
+        case 2:  // Modificar nave
+            break;
+        case 3:
+            opcionMostrarNaves(archivoNaves);
+            break;
+        case 4:   // Consultar nave
+            break;
+        case 5: // Menu principal
+            break;
+        default:
+            printf("Has ingresado mal un dato, vuelve a intentarlo!!");
+            break;
+        }
 
+    } while(op=='s');
+
+}
+
+void dibujoNaves() {
+    puts("----------------------------------------------------------");
+    puts(" /\/\/\                            /  \                   ");
+    puts("| \  / |                         /      \                 ");
+    puts("|  \/  |                       /          \               ");
+    puts("|  /\  |----------------------|     /\     |              ");
+    puts("| /  \ |                      |    /  \    |              ");
+    puts("|/    \|                      |   /    \   |              ");
+    puts("|\    /|                      |  | (  ) |  |              ");
+    puts("| \  / |                      |  | (  ) |  |              ");
+    puts("|  \/  |                 /\   |  |      |  |   /\         ");
+    puts("|  /\  |                /  \  |  |      |  |  /  \        ");
+    puts("| /  \ |               |----| |  |      |  | |----|       ");
+    puts("|/    \|---------------|    | | /|   .  |\ | |    |       ");
+    puts("|\    /|               |    | /  |   .  |  \ |    |       ");
+    puts("| \  / |               |    /    |   .  |    \    |       ");
+    puts("|  \/  |               |  /      |   .  |      \  |       ");
+    puts("|  /\  |---------------|/        |   .  |        \|       ");
+    puts("| /  \ |              /   UTN    |   .  |  UTN    \       ");
+    puts("|/    \|              (          |      |          )      ");
+    puts("|/\/\/\|               |    | |--|      |--| |    |       ");
+    puts("------------------------/  \-----/  \/  \-----/  \--------");
+    puts("                        \\//     \\//\\//     \\//        ");
+    puts("                         \/       \/  \/       \/         ");
+    puts("----------------------------------------------------------");
+
+    puts("----------------------------------------------------------");
+    puts("\t  MENU NAVES");
+    puts("----------------------------------------------------------");
+    puts("1. Cargar una nave");
+    puts("2. Modificar una nave");
+    puts("3. Mostrar todas las naves");  // Estado: (0- mantenimiento 1- Lista para su uso 2- Actualmente en misión 3- De baja)
+    puts("4. Consultar datos de naves");
+    puts("5. Volver al menu principal");
+}
+
+void opcionMostrarNaves(char archivoNaves[]) {
+    char opsw;
+
+    puts("--------------------------------------------------------");
+    puts("1. Mostrar todas las naves en la base de datos");
+    puts("2. Mostrar las naves disponibles (Estado = Lista para el uso)");
+    puts("3. Mostrar las naves dadas de baja (Estado = Dadas de baja");
+    puts("4. Mostrar las naves en mantenimiento (Estado = Mantenimiento");
+    puts("5. Mostrar las naves en mision (Estado = Actualmente en mision)");
+    puts("--------------------------------------------------------");
+
+    int op= preguntarDato();
+    limpiarPantalla();
+
+    do {
+        switch(op) {
+        case 1:
+            mostrarTodasLasNaves(archivoNaves);
+            break;
+        case 2:
+            mostrarNavesXEstado(archivoNaves, 1);
+            break;
+        case 3:
+            mostrarNavesXEstado(archivoNaves, 3);
+            break;
+        case 4:
+            mostrarNavesXEstado(archivoNaves, 0);
+            break;
+        case 5:
+            mostrarNavesXEstado(archivoNaves, 2);
+            break;
+        default :
+            printf("Has ingresado mal un dato, vuelve a intentarlo!!");
+            break;
+        }
+
+        printf("Quiere seguir mostrando naves? s/n: ");
+        fflush(stdin);
+        opsw = getch(opsw);
+        limpiarPantalla();
+
+    } while(opsw=='s');
+}
 
