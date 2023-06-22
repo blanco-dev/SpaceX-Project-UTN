@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="nave.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="127" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="misiones.c" open="1" top="1" tabpos="9" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="568" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="59" />
+			<Collapse line="82" />
+			<Collapse line="109" />
+			<Collapse line="135" />
+			<Collapse line="144" />
+			<Collapse line="246" />
+			<Collapse line="271" />
+			<Collapse line="299" />
+			<Collapse line="329" />
+			<Collapse line="340" />
+			<Collapse line="392" />
+			<Collapse line="461" />
+			<Collapse line="486" />
+			<Collapse line="518" />
+			<Collapse line="623" />
+			<Collapse line="676" />
+			<Collapse line="892" />
+			<Collapse line="1063" />
+			<Collapse line="1093" />
+			<Collapse line="1238" />
+		</Folding>
+	</File>
+	<File name="nave.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2355" topLine="12" />
+		</Cursor>
+		<Folding>
+			<Collapse line="16" />
+			<Collapse line="47" />
+			<Collapse line="61" />
+			<Collapse line="89" />
+			<Collapse line="129" />
+			<Collapse line="151" />
+			<Collapse line="161" />
+			<Collapse line="216" />
+			<Collapse line="235" />
+			<Collapse line="246" />
+			<Collapse line="270" />
+			<Collapse line="296" />
+			<Collapse line="380" />
+			<Collapse line="394" />
+			<Collapse line="415" />
+			<Collapse line="421" />
+			<Collapse line="432" />
+			<Collapse line="446" />
+			<Collapse line="458" />
+			<Collapse line="542" />
+			<Collapse line="580" />
+			<Collapse line="608" />
+			<Collapse line="627" />
+			<Collapse line="648" />
+			<Collapse line="668" />
+		</Folding>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="245" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="misiones.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="133" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="menu.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="125" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="menu.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="223" topLine="0" />
+		</Cursor>
+		<Folding>
+			<Collapse line="67" />
+			<Collapse line="84" />
+			<Collapse line="114" />
+			<Collapse line="160" />
+			<Collapse line="214" />
+			<Collapse line="261" />
+			<Collapse line="291" />
+			<Collapse line="328" />
+			<Collapse line="400" />
+			<Collapse line="583" />
+			<Collapse line="623" />
+			<Collapse line="656" />
+			<Collapse line="685" />
+			<Collapse line="740" />
+		</Folding>
+	</File>
+	<File name="astronauta.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="135" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="astronauta.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3987" topLine="201" />
+		</Cursor>
+		<Folding>
+			<Collapse line="209" />
+			<Collapse line="277" />
+			<Collapse line="292" />
+			<Collapse line="306" />
+			<Collapse line="323" />
+			<Collapse line="366" />
+			<Collapse line="389" />
+			<Collapse line="411" />
+			<Collapse line="436" />
+			<Collapse line="455" />
+			<Collapse line="475" />
+			<Collapse line="497" />
+			<Collapse line="529" />
+			<Collapse line="594" />
+			<Collapse line="604" />
+			<Collapse line="731" />
+			<Collapse line="741" />
+			<Collapse line="769" />
+			<Collapse line="777" />
+			<Collapse line="790" />
+			<Collapse line="977" />
+			<Collapse line="993" />
+			<Collapse line="1009" />
+			<Collapse line="1026" />
+			<Collapse line="1069" />
+			<Collapse line="1085" />
+			<Collapse line="1102" />
+			<Collapse line="1119" />
+		</Folding>
+	</File>
+</CodeBlocks_layout_file>
