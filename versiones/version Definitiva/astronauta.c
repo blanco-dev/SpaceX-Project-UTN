@@ -26,7 +26,7 @@ const char* paises[DIM_MAX_TXT] =
     "Austria",
     "Azerbaiyan",
     "Bahamas",
-    "Banglades",
+    "Bangladesh",
     "Barbados",
     "Barein",
     "Belgica",
@@ -70,7 +70,7 @@ const char* paises[DIM_MAX_TXT] =
     "Eritrea",
     "Eslovaquia",
     "Eslovenia",
-    "España",
+    "Espana",
     "Estados Unidos",
     "Estonia",
     "Eswatini",
@@ -87,7 +87,7 @@ const char* paises[DIM_MAX_TXT] =
     "Grecia",
     "Guatemala",
     "Guinea",
-    "Guinea-Bisau",
+    "Guinea Bisau",
     "Guinea Ecuatorial",
     "Guyana",
     "Haiti",
@@ -258,7 +258,8 @@ stAstronauta crearUnAstro(char astronauta[])
         fflush(stdin);
         scanf("%i",&aux.edad);
     }
-    while(validarEdad(aux.edad)==0);
+    while(validarEdad(aux.edad)==0 && validarCaracteresEnEnteroMision(aux.edad)==0);
+
     do
     {
         printf("Ingrese el pais el astronauta: \n");
@@ -428,6 +429,31 @@ int validarDigitosEnStrings(char auxNombre[])
         }
     }
     return 0;
+}
+
+
+int validarCaracteresEnEnteroMision(int dato)
+{
+    int flag = 0;
+    int i = 0;
+    char esUnNum[DIM_MAX_STR];
+    sprintf(esUnNum,"%d",dato);
+    while(i<strlen(esUnNum))
+    {
+        esUnNum[i] = isdigit(esUnNum[i]);
+        if(esUnNum == 0)
+        {
+
+            flag = 1;
+        }
+
+
+        i++;
+    }
+           if(flag == 1){
+            puts("Error, hay caracteres en el nombre...");
+           }
+    return flag;
 }
 
 

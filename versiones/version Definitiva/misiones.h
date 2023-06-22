@@ -31,6 +31,7 @@ int encontrarUltimaIDMision(char archivoMisiones[]);
 int validarEstadoMisionAModificar();
 int validarEstadoMision(int estadoVariable);
 
+
 // crear mision
 stMision crearUnaMision(char archivoMisiones[], char archivoNaves[], char archivoAstro[]);
 void elegirDestino(char archivoMisiones[], char destino[]);
@@ -52,7 +53,7 @@ void mostrarAstronautasDisponibles(char archivoAstro[]);
 void mostrarTodasLasNavesDisponibles(char archivoNaves[]);
 void mostrarUnaMision(stMision aux,int maxTripulantes);
 void mostrarTodasLasMisiones(char archivoMisiones[],char archivoNaves[]);
-void mostrarMisionesXEstado(char archivoMisiones[],int estado);
+void mostrarMisionesXEstado(char archivoMisiones[],char archivoNaves[],int estado);
 
 //archivo
 void cargarArchivoMisiones(char archivoAstro[], char archivoNaves[], char archivoMision[]);
@@ -80,5 +81,6 @@ void consultaMision(char archivoMisiones[]);
 void opcionesConsulta();
 int mostrarTotalDeMisiones(char archivoMisiones[]);
 int contarMisionesPorEstado(char archivoMisiones[], int estado);
+
 
 #endif // MISIONES_H_INCLUDED

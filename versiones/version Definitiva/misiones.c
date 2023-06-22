@@ -681,7 +681,7 @@ void modificarMisionLista(char archivoAstro[],char archivoMisiones[], char archi
     do
     {
         limpiarPantalla();
-        mostrarMisionesXEstado(archivoMisiones,estadoMisiones);
+        mostrarMisionesXEstado(archivoMisiones,archivoNaves,estadoMisiones);
         puts("\n-------------------------------------------------------");
         puts("Estas son todas las misiones listas");
         puts("Ingrese el ID de la mision que quiere modificar");
@@ -942,7 +942,7 @@ void modificarMisionEnVuelo(char archivoMisiones[],char archivoNaves[], char arc
     stMision auxMision;
     do
     {
-        mostrarMisionesXEstado(archivoMisiones,estado); //muestra las misiones en vuelo
+        mostrarMisionesXEstado(archivoMisiones,archivoNaves,estado); //muestra las misiones en vuelo
         puts("-----------------------------------------------------------");
         puts("Ingrese el ID correspondiente de la mision: ");
         puts("Para volver al menu ingrese -1");
@@ -1034,7 +1034,7 @@ int validarEstadoMision(int estadoVariable)
     }
     return flag;
 }
-void mostrarMisionesXEstado(char archivoMisiones[],int estado)
+void mostrarMisionesXEstado(char archivoMisiones[],char archivoNaves[],int estado)
 {
 
     int cant = 0;
@@ -1048,7 +1048,9 @@ void mostrarMisionesXEstado(char archivoMisiones[],int estado)
 
             if(estado == auxMision.estado)
             {
-                cant = cantidadMaximaDeTripulantes(archivoMisiones,auxMision.IDNave);
+
+                cant = cantidadMaximaDeTripulantes(archivoNaves,auxMision.IDNave);
+
                 mostrarUnaMision(auxMision,cant);
             }
         }

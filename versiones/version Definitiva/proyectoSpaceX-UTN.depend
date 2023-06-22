@@ -1295,3 +1295,59 @@
 	"menu.h"
 	"misiones.h"
 
+1687433609 source:c:\users\usuario\desktop\version definitiva\astronauta.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"astronauta.h"
+	"nave.h"
+	"menu.h"
+	"misiones.h"
+
+1687433609 c:\users\usuario\desktop\version definitiva\astronauta.h
+
+1687404208 c:\users\usuario\desktop\version definitiva\nave.h
+
+1687404208 c:\users\usuario\desktop\version definitiva\menu.h
+
+1687433609 c:\users\usuario\desktop\version definitiva\misiones.h
+
+1687404208 source:c:\users\usuario\desktop\version definitiva\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"nave.h"
+	"menu.h"
+	"misiones.h"
+	"windows.h"
+
+1687432459 source:c:\users\usuario\desktop\version definitiva\menu.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"nave.h"
+	"menu.h"
+	"misiones.h"
+
+1687433609 source:c:\users\usuario\desktop\version definitiva\misiones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<ctype.h>
+	"astronauta.h"
+	"nave.h"
+	"menu.h"
+	"misiones.h"
+
+1687404674 source:c:\users\usuario\desktop\version definitiva\nave.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"astronauta.h"
+	"nave.h"
+	"menu.h"
+	"misiones.h"
+

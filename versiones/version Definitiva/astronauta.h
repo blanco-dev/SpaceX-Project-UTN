@@ -46,8 +46,8 @@ void validarEspecialidad(char especialidad[]);
 int validarEstado(int datoEstado);
 void mostrarEspecialidad();
 int encontrarUltimaID(char astronauta[]);///autoincrementar ID
-
 int validarDigitosEnStrings(char auxNombre[]);
+int validarCaracteresEnEnteroMision(int dato);
 
 // archivos
 void cargarUnAstroToArchivo(char archivoAstronautas[]);

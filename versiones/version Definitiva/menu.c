@@ -466,23 +466,23 @@ void opcionMostrarMisiones(char archivoMisiones[],char archivoNaves[])
         case 2:
             estado= 1;
 
-            mostrarMisionesXEstado(archivoMisiones,estado);
+            mostrarMisionesXEstado(archivoMisiones,archivoNaves,estado);
             break;
         case 3:
             estado= 2;
-            mostrarMisionesXEstado(archivoMisiones,estado);
+            mostrarMisionesXEstado(archivoMisiones,archivoNaves,estado);
             break;
         case 4:
             estado= 3;
-             mostrarMisionesXEstado(archivoMisiones,estado);
+             mostrarMisionesXEstado(archivoMisiones,archivoNaves,estado);
             break;
         case 5:
             estado= 4;
-            mostrarMisionesXEstado(archivoMisiones,estado);
+            mostrarMisionesXEstado(archivoMisiones,archivoNaves,estado);
             break;
         case 6:
             estado= 5;
-            mostrarMisionesXEstado(archivoMisiones,estado);
+            mostrarMisionesXEstado(archivoMisiones,archivoNaves,estado);
             break;
         default:
             printf("Por favor ingrese una opcion valida \n");
