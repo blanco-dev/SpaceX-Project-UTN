@@ -36,3 +36,9 @@ Una vez finalizado el formulario. Tendra que abrir la opcion de Naves para así 
 Una vez dentro de la opcion de Cargar Nave, podra elegir dentro de las 3 categorias, la que usted más desee. 
 
 ![SpaceX introduccion5](https://github.com/blanco-dev/spaceX-project-UTN/blob/main/versiones/img/image5.png)
+
+
+### PASO N°7
+Despúes de elegir su nave, podrá crear una mision y comenzar a viajar en el espacio!! Le recomendamos: precaución en los viajes y seguridad ante todo! Que lo disfrute...
+
+![SpaceX introduccion6](https://github.com/blanco-dev/spaceX-project-UTN/blob/main/versiones/img/image6.png)
