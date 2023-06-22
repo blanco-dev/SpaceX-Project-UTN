@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Debug" />
+	<File name="misiones.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="833" topLine="5" />
+		</Cursor>
+	</File>
+	<File name="astronauta.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="562" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="astronauta.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="18096" topLine="556" />
+		</Cursor>
+		<Folding>
+			<Collapse line="209" />
+			<Collapse line="215" />
+			<Collapse line="277" />
+			<Collapse line="292" />
+			<Collapse line="306" />
+			<Collapse line="323" />
+			<Collapse line="366" />
+			<Collapse line="376" />
+			<Collapse line="407" />
+			<Collapse line="587" />
+			<Collapse line="597" />
+			<Collapse line="1047" />
+			<Collapse line="1063" />
+			<Collapse line="1080" />
+			<Collapse line="1097" />
+		</Folding>
+	</File>
+	<File name="menu.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="147" topLine="9" />
+		</Cursor>
+		<Folding>
+			<Collapse line="17" />
+			<Collapse line="62" />
+			<Collapse line="79" />
+			<Collapse line="154" />
+		</Folding>
+	</File>
+	<File name="nave.h" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="973" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="nave.c" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="15885" topLine="554" />
+		</Cursor>
+		<Folding>
+			<Collapse line="277" />
+		</Folding>
+	</File>
+	<File name="menu.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="4" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="563" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="main.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="3" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="325" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="misiones.c" open="1" top="1" tabpos="9" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8342" topLine="125" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>
