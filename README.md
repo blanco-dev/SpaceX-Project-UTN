@@ -42,3 +42,8 @@ Una vez dentro de la opcion de Cargar Nave, podra elegir dentro de las 3 categor
 Despúes de elegir su nave, podrá crear una mision y comenzar a viajar en el espacio!! Le recomendamos: precaución en los viajes y seguridad ante todo! Que lo disfrute...
 
 ![SpaceX introduccion6](https://github.com/blanco-dev/spaceX-project-UTN/blob/main/versiones/img/image6.png)
+
+### PASO N°8
+Una vez finalizado todo, se le presentará esta pantalla de Despedida, donde le indicará que ha finalizado el programa. Desde ya, muchas gracias! 
+
+![SpaceX introduccion7](https://github.com/blanco-dev/spaceX-project-UTN/blob/main/versiones/img/image7.png)
