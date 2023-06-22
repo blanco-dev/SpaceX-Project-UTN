@@ -30,3 +30,9 @@ Luego, se desplegará el siguiente menú, donde tendras que rellenar el formular
 Una vez finalizado el formulario. Tendra que abrir la opcion de Naves para así Cargar una Nave, para luego utilizarla en las misiones correspondientes.
 
 ![SpaceX introduccion4](https://github.com/blanco-dev/spaceX-project-UTN/blob/main/versiones/img/image4.png)
+
+
+### PASO N°6
+Una vez dentro de la opcion de Cargar Nave, podra elegir dentro de las 3 categorias, la que usted más desee. 
+
+![SpaceX introduccion5](https://github.com/blanco-dev/spaceX-project-UTN/blob/main/versiones/img/image5.png)
